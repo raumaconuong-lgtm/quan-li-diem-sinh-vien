@@ -6,13 +6,17 @@ st.set_page_config(page_title="Quan ly diem sinh vien", layout="wide")
 st.title("QUẢN LÝ ĐIỂM SINH VIÊN")
 
 # Du lieu 10 sinh vien theo bai Colab
+
 data = {
-    "Ho_ten": ["An", "Binh", "Chi", "Dung", "Ha",
-               "Lan", "Minh", "Nam", "Phuc", "Trang"],
+    "Ho_ten": [
+        "An", "Binh", "Chi", "Dung", "Ha",
+        "Lan", "Minh", "Nam", "Phuc", "Trang"
+    ],
     "Chuyen_can": [8, 9, 7, 10, 8, 6, 9, 8, 7, 10],
     "Giua_ky": [7, 8, 6, 9, 8, 7, 9, 8, 7, 9],
     "Cuoi_ky": [8, 9, 7, 10, 8, 7, 10, 8, 8, 10]
 }
+
 
 df = pd.DataFrame(data)
 
